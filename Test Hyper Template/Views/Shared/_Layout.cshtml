@@ -7,6 +7,9 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="~/Contents/images/favicon.ico">
 
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
     <!-- third party css -->
     <link href="~/Contents/css/vendor/fullcalendar.min.css" rel="stylesheet" type="text/css" />
     <!-- third party css end -->
@@ -20,9 +23,9 @@
 </head>
 <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
     <!-- Begin page -->
-    <div class="wrapper">
+    <div class="wrapper mm-active">
         <!-- ========== Left Sidebar Start ========== -->
-        <div class="left-side-menu">
+        <div class="left-side-menu mm-show">
 
             <!-- LOGO -->
             <a href="index.html" class="logo text-center logo-light">
@@ -231,32 +234,33 @@
             </div>
             <!-- Left Sidebar End -->
         </div>
+    </div>
+    <div class="content-page">
+        <div class="content">
+            @RenderBody()
         </div>
-        <div class="container">
-            <main role="main" class="pb-3">
-                @RenderBody()
-            </main>
-        </div>
+    </div>
 
-        <!-- bundle -->
-        <script src="~/Scripts/js/vendor.min.js"></script>
-        <script src="~/Scripts/js/app.min.js"></script>
 
-        <!-- third party js -->
-        <script src="~/Scripts/js/vendor/jquery-ui.min.js"></script>
-        <script src="~/Scripts/js/vendor/fullcalendar.min.js"></script>
-        <!-- third party js ends -->
-        <!-- demo app -->
-        <script src="~/Scripts/js/pages/demo.calendar.js"></script>
-        <!-- end demo js-->
 
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="~/Scripts/js/site.js" asp-append-version="true"></script>
-        <!-- plugin js -->
-        <script src="~/Scripts/js/vendor/dropzone.min.js"></script>
-        <!-- init js -->
-        <script src="~/Scripts/js/ui/component.fileupload.js"></script>
-        @RenderSection("Scripts", required: false)
+    <!-- bundle -->
+    <script src="~/Scripts/js/vendor.min.js"></script>
+    <script src="~/Scripts/js/app.min.js"></script>
+
+    <!-- third party js -->
+    <script src="~/Scripts/js/vendor/jquery-ui.min.js"></script>
+    <script src="~/Scripts/js/vendor/fullcalendar.min.js"></script>
+    <!-- third party js ends -->
+    <!-- demo app -->
+    <script src="~/Scripts/js/pages/demo.calendar.js"></script>
+    <!-- end demo js-->
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Scripts/js/site.js" asp-append-version="true"></script>
+    <!-- plugin js -->
+    <script src="~/Scripts/js/vendor/dropzone.min.js"></script>
+    <!-- init js -->
+    <script src="~/Scripts/js/ui/component.fileupload.js"></script>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

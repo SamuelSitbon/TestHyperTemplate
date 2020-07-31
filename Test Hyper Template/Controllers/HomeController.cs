@@ -18,10 +18,17 @@ namespace Test_Hyper_Template.Controllers
             _logger = logger;
         }
 
+       
         public IActionResult Index()
         {
             return View();
         }
+
+        public IActionResult VentesClients()
+        {
+            return View();
+        }
+
 
         public IActionResult Privacy()
         {

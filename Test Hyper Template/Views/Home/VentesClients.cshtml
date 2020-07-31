@@ -1,0 +1,96 @@
+﻿
+@{
+    ViewData["Title"] = "VentesClients";
+}
+
+
+<!-- Start Content-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1"><label class="control-label col-form-label-sm" for="SelectedSiren">Siren</label></div>
+            <div class="col-md-4">
+                <select class="form-control form-control-sm" data-val="true" data-val-required="Le champ Siren est requis." id="SelectSiren" name="SelectedSiren">
+                    <option value="123456789">123456789</option>
+                    <option value="404480963">404480963</option>
+                    <option value="412071680">412071680</option>
+                    <option value="412071680">412071680</option>
+                    <option value="502516933">502516933</option>
+                    <option value="502537970">502537970</option>
+                    <option value="503104785">503104785</option>
+                    <option value="519145197">519145197</option>
+                    <option value="530001098">530001098</option>
+                    <option value="533061149">533061149</option>
+                    <option value="535214845">535214845</option>
+                    <option value="751352865">751352865</option>
+                    <option value="753556539">753556539</option>
+                    <option value="754004810">754004810</option>
+                    <option value="790156434">790156434</option>
+                    <option value="794256669">794256669</option>
+                    <option value="805039187">805039187</option>
+                    <option value="808654933">808654933</option>
+                    <option value="833634540">833634540</option>
+                    <option value="888466233">888466233</option>
+                </select>
+            </div>
+            <div class="col-md-1"><label class="control-label col-form-label-sm" for="SelectedEndFiscalYear">Exercice</label></div>
+            <div class="col-md-2">
+                <select class="form-control form-control-sm" data-val="true" data-val-required="Le champ Exercice est requis." id="SelectEndFiscalYear" name="SelectedEndFiscalYear">
+                    <option value="31/12/2018">31/12/2018</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-primary btn-rounded">Afficher</button>
+            </div>
+        </div>
+                <!-- ============================================================== -->
+                <!-- Start Page Content here -->
+                <!-- ============================================================== -->
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box">
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">managIA</a></li>
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Contrôle Comptabilité</a></li>
+                                    <li class="breadcrumb-item active">Ventes / Clients</li>
+                                </ol>
+                            </div>
+                            <h4 class="page-title">Ventes / Clients</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="nav nav-tabs mb-3">
+                    <li class="nav-item">
+                        <a href="#home" data-toggle="tab" aria-expanded="false" class="nav-link">
+                            <i class="mdi mdi-home-variant d-md-none d-block"></i>
+                            <span class="d-none d-md-block">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#profile" data-toggle="tab" aria-expanded="true" class="nav-link active">
+                            <i class="mdi mdi-account-circle d-md-none d-block"></i>
+                            <span class="d-none d-md-block">Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#settings" data-toggle="tab" aria-expanded="false" class="nav-link">
+                            <i class="mdi mdi-settings-outline d-md-none d-block"></i>
+                            <span class="d-none d-md-block">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane" id="home">
+                        <p>...</p>
+                    </div>
+                    <div class="tab-pane show active" id="profile">
+                        <p>...</p>
+                    </div>
+                    <div class="tab-pane" id="settings">
+                        <p>...</p>
+                    </div>
+                </div>
+            </div>
